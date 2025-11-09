@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Моє Портфоліо</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
+  <style>
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .hero-section {
+      position: relative;
+      height: 80vh;
+      background-image: url('./background.jpg'); 
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    }
+
+    .card {
+      transition: transform 0.25s ease-in-out, 
+                  box-shadow 0.25s ease-in-out, 
+                  background-color 0.25s ease-in-out;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); 
+      background-color: #f8f9fa;
+    }
+
+    .btn-primary {
+      transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    }
+
+    .btn-primary:hover {
+      background-color: #0b5ed7;
+      border-color: #0a58ca;
+    }
+  </style>
+  
+</head>
+<body>
+
+  <header class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content text-center text-white">
+      <h1 class="display-3 fw-bold">Вітаю у моєму портфоліо</h1>
+      <p class="lead">Колекція моїх лабораторних робіт та проектів</p>
+    </div>
+  </header>
+
+  <main class="container my-5">
+    
+    <div class="row mb-3">
+      <div class="col-12 text-center">
+        <h2 class="display-5">Мої проекти</h2>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      
+      <div class="col-md-6 col-lg-6 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="./magic_ball.png" class="card-img-top" alt="magic ball">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Magic Ball (ЛР 7)</h5>
+            <p class="card-text">Простий застосунок "Магічна куля" для передбачень.</p>
+            <a href="https://vvvitwt.github.io/magicball/" class="btn btn-primary mt-auto">Перейти</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-6 col-lg-6 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="./random.png" class="card-img-top" alt="random">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Random (ЛР 8)</h5>
+            <p class="card-text">Гра "Вгадай число", де комп'ютер загадує число.</p>
+            <a href="https://vvvitwt.github.io/computer_game/" class="btn btn-primary mt-auto">Перейти</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-6 col-lg-6 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="./21.png" class="card-img-top" alt="21">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">21 Game (ЛР 9)</h5>
+            <p class="card-text">Карткова гра "21" (Блекджек) з дилером.</p>
+            <a href="https://vvvitwt.github.io/cardsgame/" class="btn btn-primary mt-auto">Перейти</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-6 col-lg-6 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="./casino.png" class="card-img-top" alt="casino">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Casino (ЛР 10)</h5>
+            <p class="card-text">Симулятор казино, що об'єднує гру "21".</p>
+            <a href="https://vvvitwt.github.io/casino21/" class="btn btn-primary mt-auto">Перейти</a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPU6oGfZo9C1pnS/m/Ljpv6oM/" crossorigin="anonymous"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
